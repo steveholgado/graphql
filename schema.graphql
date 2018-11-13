@@ -1,0 +1,61 @@
+# Book type
+type Book {
+  id: ID!
+  title: String!
+  publicationYear: String
+  author: Author!
+}
+
+# Author type
+type Author {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  fullName: String!
+  born: String!
+  died: String
+  books: [Book]!
+}
+
+# Success type (for delete mutations)
+type SuccessMsg {
+  message: String
+}
+
+# Root queries
+type Query {
+  book(id: ID!): Book!
+  books: [Book]!
+  author(id: ID!): Author!
+  authors: [Author]!
+}
+
+# Mutations
+type Mutation {
+  createBook(
+    title: String!
+    publicationYear: String
+    authorId: ID!
+  ): Book
+  updateBook(
+    id: ID!
+    title: String
+    publicationYear: String
+    authorId: ID
+  ): Book
+  deleteBook(id: ID!): SuccessMsg
+  createAuthor(
+    firstName: String!
+    lastName: String!
+    born: String!
+    died: String
+  ): Author
+  updateAuthor(
+    id: ID!
+    firstName: String
+    lastName: String
+    born: String
+    died: String
+  ): Author
+  deleteAuthor(id: ID!): SuccessMsg
+}

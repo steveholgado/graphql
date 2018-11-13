@@ -1,0 +1,75 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Oliver Twist",
+      "publicationYear": "1838",
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "title": "Great Expectations",
+      "publicationYear": "1861",
+      "authorId": 1
+    },
+    {
+      "id": 3,
+      "title": "Harry Potter and the Philosopher's Stone",
+      "publicationYear": "1997",
+      "authorId": 2
+    },
+    {
+      "id": 4,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "publicationYear": "1954",
+      "authorId": 3
+    },
+    {
+      "id": 5,
+      "title": "The Lord of the Rings: The Two Towers",
+      "publicationYear": "1954",
+      "authorId": 3
+    },
+    {
+      "id": 6,
+      "title": "The Lord of the Rings: The Return of the King",
+      "publicationYear": "1955",
+      "authorId": 3
+    },
+    {
+      "id": 7,
+      "title": "Nineteen Eighty-Four",
+      "publicationYear": "1949",
+      "authorId": 4
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "firstName": "Charles",
+      "lastName": "Dickens",
+      "born": "7 February 1812",
+      "died": "9 June 1870"
+    },
+    {
+      "id": 2,
+      "firstName": "J. K.",
+      "lastName": "Rowling",
+      "born": "31 July 1965"
+    },
+    {
+      "id": 3,
+      "firstName": "J.R.R.",
+      "lastName": "Tolkien",
+      "born": "3 January 1892",
+      "died": "2 September 1973"
+    },
+    {
+      "id": 4,
+      "firstName": "George",
+      "lastName": "Orwell",
+      "born": "25 June 1903",
+      "died": "21 January 1950"
+    }
+  ]
+}

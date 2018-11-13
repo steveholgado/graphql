@@ -1,0 +1,58 @@
+query {
+  books {
+    id
+    title
+    publicationYear
+    author {
+      id
+      fullName
+    }
+  }
+}
+
+query {
+  book(id: 7) {
+    id
+    title
+    publicationYear
+    author {
+      id
+      fullName
+    }
+  }
+}
+
+mutation {
+  createBook(
+    title: "Animal Farm"
+    publicationYear: "2045"
+    authorId: 4
+  ) {
+    id
+    title
+    publicationYear
+    author {
+      fullName
+    }
+  }
+}
+
+mutation {
+  updateBook(
+    id: 8
+    publicationYear: "1945"
+  ) {
+    id
+    title
+    publicationYear
+    author {
+      fullName
+    }
+  }
+}
+
+mutation {
+  deleteBook(id: 8) {
+    message
+  }
+}
